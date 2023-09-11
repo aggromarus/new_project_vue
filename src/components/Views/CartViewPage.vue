@@ -1,0 +1,112 @@
+<script setup>
+
+</script>
+
+<template>
+  <body>
+  <div class="header">
+    <div class="header__wrap container">
+      <div class="header__left">
+        <a href="index.html">
+          <img src="image/logo.png" alt="logo" />
+        </a>
+        <img src="image/search.png" alt="search" />
+      </div>
+      <div class="header__right">
+        <img src="image/burger.png" alt="burger__menu" />
+        <a href="registration.html"><img src="image/account.png" alt="account" /></a>
+        <a href="cart.html"><img src="image/buy.png" alt="buy" /></a>
+      </div>
+    </div>
+  </div>
+  <section class="cart container">
+    <div class="cart__title">
+      <p>SHOPPING CART</p>
+    </div>
+  </section>
+  <main>
+    <section class="product container">
+      <div class="product__card">
+        <img src="image/t-shirt.png" alt="t-shirt">
+        <div class="product__info">
+          <h2>MANGO   PEOPLE  T-SHIRT</h2>
+          <p>Price: <span>$300</span></p>
+          <p>Color: Red</p>
+          <p>Size: Xl	</p>
+          <label for="text">Quantity:</label>
+          <input type="number">
+        </div>
+      </div>
+
+      <fieldset class="product__form">
+        <p>SHIPPING ADRESS</p>
+        <input type="text" placeholder="Kukuevo"><br>
+        <input type="text" placeholder="State"><br>
+        <input type="text" placeholder="Postcode / Zip"><br>
+        <button type="submit">Get a quote</button>
+      </fieldset>
+
+      <div class="product__card">
+        <img src="image/t-shirt.png" alt="t-shirt">
+        <div class="product__info">
+          <h2>MANGO   PEOPLE  T-SHIRT</h2>
+          <p>Price: <span>$300</span></p>
+          <p>Color: Red</p>
+          <p>Size: Xl	</p>
+          <label for="text">Quantity:</label>
+          <input type="number">
+        </div>
+      </div>
+
+      <div class="product__total">
+        <p>SUB TOTAL   $900</p>
+        <h3>GRAND TOTAL    <span>$900</span></h3>
+        <button>PROCEED TO CHECHOUT</button>
+      </div>
+
+    </section>
+    <div class="container">
+      <div class="btn">
+        <p><span>CLEAR SHOPPING CART</span></p>
+        <p><span>CONTINUE SHOPPING</span></p>
+      </div>
+    </div>
+  </main>
+  <div class="footer">
+    <div class="footer__background">
+      <div class="container footer__wrap">
+        <div class="footer__info">
+          <img src="image/subs.png" alt="SUBSCRIBE" />
+          <p>
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+          </p>
+        </div>
+        <div class="footer__describe">
+          <p>
+            SUBSCRIBE <br />FOR OUR NEWLETTER AND PROMOTION
+          </p>
+          <br>
+          <br>
+          <input type="email" id="email" name="email" placeholder="Enter Your Email" />
+          <a href="#" id="subscribe">Subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>&#169 2021 Brand All Rights Reserved.</span>
+      <div class="links">
+        <a class="fab fa-facebook-square" href="https://www.facebook.com/">
+        </a>
+        <a class="fab fa-instagram" href="https://www.instagram.com/"></a>
+        <a class="fab fa-pinterest-square" href="https://www.pinterest.ru/"></a>
+        <a class="fab fa-twitter-square" href="https://twitter.com/"></a>
+      </div>
+    </div>
+  </div>
+  </body>
+</template>
+
+<style scoped>
+
+</style>
