@@ -1,8 +1,15 @@
 <script setup>
-import Header from "@/components/Header.vue";
+import Header from "@/components/HeaderComponent.vue";
 import ProductCardItem from "@/components/ProductCardItem.vue";
 import ProsItemCard from "@/components/ProsItemCard.vue";
 import FooterComponentItem from "@/components/FooterComponentItem.vue";
+import ProductList from "@/components/ProductList.vue";
+
+export default {
+  components:{
+
+  }
+}
 </script>
 
 <template>
@@ -42,12 +49,7 @@ import FooterComponentItem from "@/components/FooterComponentItem.vue";
     <section class="product">
       <div class="container">
         <div class="product__wrap">
-          <Product-Card-item/>
-          <Product-Card-item/>
-          <Product-Card-item/>
-          <Product-Card-item/>
-          <Product-Card-item/>
-          <Product-Card-item/>
+          <ProductList/>
         </div>
       </div>
     </section>

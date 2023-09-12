@@ -16,6 +16,12 @@
 </template>
 <script>
 export default {
-  name: 'Product-Card-item'
+  name: 'Product-Card-item',
+  props: {
+    list: {
+      type: Array,
+      required: true
+    }
+  }
 }
 </script>
