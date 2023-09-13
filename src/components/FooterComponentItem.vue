@@ -1,4 +1,5 @@
 <template>
+<!--  TODO: зарефакторить вот эту ерунду. Кода дофига, толку -нифига. -->
   <div class="footer">
     <div class="footer__background">
       <div class="container footer__wrap">
@@ -10,6 +11,7 @@
           </p>
         </div>
         <div class="footer__describe">
+<!--          TODO: пофиксить всратую кнопку подписки с инпутом-->
           <p>SUBSCRIBE <br/>FOR OUR NEWLETTER AND PROMOTION</p>
           <br/>
           <br/>
@@ -27,6 +29,7 @@
     <div class="footer__bottom container">
       <span>2021 Brand All Rights Reserved.</span>
       <div class="links">
+<!--        TODO: стили - добавить fontawesome, без него посыпались линки. Или вообще нахер его убрать.-->
         <a class="fab fa-facebook-square" href="https://www.facebook.com/">
         </a>
         <a class="fab fa-instagram" href="https://www.instagram.com/"></a>

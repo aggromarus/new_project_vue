@@ -1,20 +1,14 @@
 <script setup>
-import Header from "@/components/HeaderComponent.vue";
-import ProductCardItem from "@/components/ProductCardItem.vue";
 import ProsItemCard from "@/components/ProsItemCard.vue";
 import FooterComponentItem from "@/components/FooterComponentItem.vue";
 import ProductList from "@/components/ProductList.vue";
-
-export default {
-  components:{
-
-  }
-}
+import HeaderComponent from "@/components/HeaderComponent.vue";
 </script>
 
 <template>
-  <body>
-  <Header/>
+  <div>
+  <HeaderComponent/>
+
   <main>
     <section class="promo">
       <div class="promo__wrap container">
@@ -25,7 +19,8 @@ export default {
       </div>
     </section>
 
-    <section class="category"> ////////////////// заменить на  компонент category__item
+    <section class="category">
+<!--      TODO: заменить на компонент category__item-->
       <div class="category__wrap container">
         <div class="category__item">
           <p>30% OFF <br/><span> FOR WOMEN</span></p>
@@ -46,56 +41,22 @@ export default {
       <p>Shop for items based on what we featured in this week</p>
       <!-- указать переменные для <p> -->
     </div>
-    <section class="product">
-      <div class="container">
-        <div class="product__wrap">
-          <ProductList/>
-        </div>
-      </div>
-    </section>
-    <div class="link"> пофиксить кнопку эту вот
-      <a class="link__browse" href="#"
-      >Browse All Product</a
-      >
-    </div>
+    <ProductList/>
   </main>
 
   <div class="comfort">
-    <div class="footer__wrap container"> // поменять значения в компонентах, передать правильные пропсы
+    <div class="footer__wrap container">
+<!--TODO: поменять значения в компонентах, передать правильные пропсы-->
       <Pros-item-card/>
       <Pros-item-card/>
       <Pros-item-card/>
     </div>
   </div>
+
   <Footer-Component-item/>
-  </body>
+
+  </div>
 </template>
 
 <style scoped>
-.header {
-  background-color: #222222;
-  color: aliceblue;
-  padding: 19px 0;
-
-  &__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__left {
-    & img {
-      text-decoration: none;
-      margin-right: 41px;
-    }
-  }
-
-  &__right {
-    & img {
-      &:not(:last-child) {
-        margin-right: 33px;
-      }
-    }
-  }
-}
 </style>
